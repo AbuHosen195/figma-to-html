@@ -1,0 +1,347 @@
+/***********=>Global CSS<=***************/
+* {
+  margin: 0;
+  padding: 0;
+}
+:root {
+  --button-bg-color: #21b573;
+  --first-text-color: #413960;
+  --second-text-color: #585859;
+  --section-bg-color: #f0fff0;
+  --footer-bg: #282531;
+}
+body {
+  font-size: 16px;
+  line-height: 24px;
+  font-family: "Poppins", sans-serif;
+}
+.btn {
+  font-family: "Roboto", sans-serif;
+}
+img {
+  width: 100%;
+}
+ul {
+  padding: 0;
+  margin: 0;
+}
+li {
+  list-style-type: none;
+}
+a {
+  text-decoration: none;
+  color: #000;
+}
+.container {
+  width: 1140px;
+  margin: auto;
+}
+/***********=>header CSS start<=***************/
+.menu {
+  width: 100%;
+  padding: 10px 0;
+  background-color: var(--section-bg-color);
+}
+@keyframes menu-loading {
+  0% {
+    transform: translateY(-100%);
+  }
+  100% {
+    transform: translateY(0%);
+  }
+}
+.menu .navbar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation: menu-loading 300ms ease-in;
+}
+.menu .navbar .logo {
+  flex-basis: 20%;
+}
+.menu .navbar .logo img {
+  width: 150px;
+  height: auto;
+}
+.menu .navbar .navlink {
+  flex-basis: 60%;
+}
+.menu-links {
+  display: flex;
+  justify-content: flex-end;
+}
+.menu-links li {
+  padding: 0 25px;
+  position: relative;
+}
+
+.menu-links li a::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 2px;
+  margin-left: 25%;
+  display: none;
+  background-color: var(--button-bg-color);
+  transition: all 0.5s;
+}
+.menu-links li a:hover::after {
+  display: block;
+  width: 50%;
+  transition: all 0.5s;
+}
+.menu .navbar .btn {
+  flex-basis: 20%;
+  justify-content: flex-end;
+}
+.default-btn {
+  padding: 12px 28px;
+  background-color: var(--button-bg-color);
+  border: 1px solid var(--button-bg-color);
+  border-radius: 33px;
+  color: #fff;
+  transition: all 0.5s;
+}
+.default-btn:hover {
+  background-color: transparent;
+  transition: all 0.5s;
+  color: #21b573;
+}
+/***********=>header CSS end<=***************/
+/***********=>banner CSS start<=***************/
+.banner {
+  padding: 70px 0;
+  background-color: var(--section-bg-color);
+}
+.content-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.content-wrapper .left-content span {
+  color: #fd511a;
+  font-size: 14px;
+}
+.content-wrapper .left-content h2 {
+  font-size: 48px;
+  line-height: 70px;
+  font-weight: 700;
+  width: 90%;
+}
+
+.content-wrapper .left-content h2 span {
+  font-size: 48px;
+  line-height: 70px;
+  font-weight: 700;
+  color: #21b573;
+}
+.content-wrapper .left-content p {
+  width: 75%;
+  font-size: 16px;
+  line-height: 36px;
+  margin-bottom: 20px;
+}
+.banner-btn {
+  border: 1px solid black;
+}
+/***********=>banner CSS end<=***************/
+/***********=>feature CSS start<=***************/
+.feature-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 50px;
+}
+
+.feature-wrapper .content {
+  background-color: var(--section-bg-color);
+  padding: 50px;
+  border-radius: 5px;
+  transition: all 0.5s;
+}
+.feature-wrapper .content:first-child img {
+  width: 80px;
+  height: auto;
+}
+.feature-wrapper .content:hover {
+  box-shadow: 0px 7px 29px 0px rgba(100, 100, 111, 0.2);
+  background-color: #fff;
+  transition: all 0.5s;
+}
+.feature-wrapper .content img {
+  width: 100px;
+  height: auto;
+}
+.feature-wrapper .content h4 {
+  font-size: 24px;
+  color: var(--first-text-color);
+  margin-top: 15px;
+}
+.feature-wrapper .content p {
+  color: var(--second-text-color);
+}
+/***********=>feature CSS end<=***************/
+/***********=>course section CSS start<=***************/
+.section-heading h2 {
+  text-align: center;
+  padding: 50px 0;
+  font-size: 36px;
+  line-height: 54px;
+  color: var(--first-text-color);
+}
+.courses {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.course-card {
+  padding: 20px;
+  margin: 0 15px;
+  box-shadow: 0px 7px 29px 0px rgba(100, 100, 111, 0.2);
+  border-radius: 5px;
+  overflow: hidden;
+  transition: all 0.5s;
+}
+.course-card:hover img {
+  transform: scale(1.1);
+  border-radius: 10px;
+  transition: all 0.5s;
+}
+.course-card img {
+  width: 100%;
+  height: auto;
+}
+.course-card h2 {
+  font-size: 24px;
+  line-height: 36px;
+  color: var(--first-text-color);
+}
+.course-card h4 {
+  font-size: 16px;
+  line-height: 24px;
+  margin-top: 15px;
+  margin-bottom: 25px;
+  color: var(--second-text-color);
+}
+.course-btn {
+  margin-top: 50px;
+  padding: 8px 28px;
+}
+.course-card .card-footer {
+  display: flex;
+  justify-content: space-between;
+}
+.course-card .card-footer .left,
+.right {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 0;
+  margin-top: 30px;
+}
+.course-card .card-footer .left img,
+.right img {
+  width: 30px;
+  height: auto;
+}
+.course-card .card-footer .left span,
+.right span {
+  font-size: 16px;
+  line-height: 24px;
+  color: var(--second-text-color);
+}
+/***********=>course section CSS end<=***************/
+/***********=>testimonial section CSS start<=***************/
+.testimonial {
+  padding: 60px 0;
+}
+.testimonial-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.testimonial-content img {
+  width: 150px;
+  height: auto;
+  margin-right: 20px;
+}
+.testimonial-content p {
+  width: 52%;
+  height: auto;
+  margin-left: 25px;
+}
+/***********=>testimonial section CSS end<=***************/
+/***********=>footer section CSS start<=***************/
+
+.footer {
+  background-color: var(--footer-bg);
+  color: #fff;
+  padding-top: 70px;
+  padding-bottom: 20px;
+  text-align: center;
+}
+.footer .content {
+  display: flex;
+  justify-content: space-between;
+}
+.footer .content .vision {
+  flex-basis: 33%;
+}
+.footer .content .vision p {
+  font-size: 16px;
+  line-height: 30px;
+}
+.footer-menu h2 {
+  font-size: 18px;
+  font-weight: 700;
+  margin-bottom: 15px;
+  text-align: left;
+}
+.menu-list li {
+  text-align: left;
+  margin-bottom: 10px;
+  position: relative;
+}
+.menu-list li::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 2px;
+  display: none;
+  background-color: var(--button-bg-color);
+  transition: all 0.5s;
+}
+.menu-list li:hover::after {
+  display: block;
+  width: 90%;
+  transition: all 0.5s;
+}
+.menu-list li a {
+  color: #fff;
+}
+.footer-bottom {
+  margin-top: 90px;
+}
+/***********=>footer section CSS end<=***************/
+
+/* scroll to top button css  */
+.scrollTop {
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
+  background-color: var(--button-bg-color);
+  border-radius: 50%;
+  text-align: center;
+  color: tomato;
+  position: fixed;
+  z-index: 1;
+  bottom: 15px;
+  right: 5px;
+  display: none;
+  transition: all 0.5s;
+}
