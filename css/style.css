@@ -34,13 +34,15 @@ a {
 }
 .container {
   width: 1140px;
-  margin: auto;
+  margin: 0 auto;
 }
 /***********=>header CSS start<=***************/
 .menu {
   width: 100%;
   padding: 10px 0;
   background-color: var(--section-bg-color);
+  position: fixed;
+  z-index: 1;
 }
 @keyframes menu-loading {
   0% {
@@ -52,19 +54,20 @@ a {
 }
 .menu .navbar {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
   animation: menu-loading 300ms ease-in;
 }
-.menu .navbar .logo {
+/* .menu .navbar .logo {
   flex-basis: 20%;
-}
+} */
 .menu .navbar .logo img {
   width: 150px;
   height: auto;
 }
 .menu .navbar .navlink {
   flex-basis: 60%;
+  justify-self: end;
 }
 .menu-links {
   display: flex;
@@ -93,7 +96,7 @@ a {
   transition: all 0.5s;
 }
 .menu .navbar .btn {
-  flex-basis: 20%;
+  /* flex-basis: 20%; */
   justify-content: flex-end;
 }
 .default-btn {
@@ -149,8 +152,12 @@ a {
 }
 /***********=>banner CSS end<=***************/
 /***********=>feature CSS start<=***************/
+.features {
+  width: 100%;
+}
 .feature-wrapper {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
   margin-top: 50px;
@@ -185,6 +192,9 @@ a {
 }
 /***********=>feature CSS end<=***************/
 /***********=>course section CSS start<=***************/
+.course-section {
+  width: 100%;
+}
 .section-heading h2 {
   text-align: center;
   padding: 50px 0;
@@ -194,6 +204,7 @@ a {
 }
 .courses {
   display: flex;
+
   align-items: center;
   justify-content: center;
 }
@@ -282,13 +293,16 @@ a {
   padding-top: 70px;
   padding-bottom: 20px;
   text-align: center;
+  width: 100%;
 }
 .footer .content {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
 }
 .footer .content .vision {
   flex-basis: 33%;
+  width: 30%;
 }
 .footer .content .vision p {
   font-size: 16px;

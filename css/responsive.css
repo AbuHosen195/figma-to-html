@@ -1,0 +1,196 @@
+/* 
+  ##Device = Desktops
+  ##Screen = 1281px to higher resolution desktops
+*/
+
+@media (min-width: 1281px) {
+}
+
+/* 
+  ##Device = Laptops, Desktops
+  ##Screen = B/w 1025px to 1280px
+*/
+
+@media (min-width: 1025px) and (max-width: 1280px) {
+}
+
+/* 
+  ##Device = Tablets, Ipads (portrait)
+  ##Screen = B/w 768px to 1024px
+*/
+
+@media (min-width: 768px) and (max-width: 1024px) {
+}
+
+/* 
+  ##Device = Tablets, Ipads (landscape)
+  ##Screen = B/w 768px to 1024px
+*/
+
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+}
+
+/* 
+  ##Device = Low Resolution Tablets, Mobiles (Landscape)
+  ##Screen = B/w 481px to 767px
+*/
+
+@media (min-width: 481px) and (max-width: 767px) {
+}
+
+/* 
+  ##Device = Most of the Smartphones Mobiles (Portrait)
+  ##Screen = B/w 320px to 479px
+*/
+
+/* Mobile Responsive CSS */
+
+@media only screen and (max-width: 767px) {
+  .menu {
+    width: 100% !important;
+  }
+  .container {
+    width: 100%;
+    padding: 0 15px;
+  }
+  .navbar {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .menu .navbar .logo img {
+    width: 150px;
+  }
+
+  .menu .navbar .navlink {
+    flex-basis: 60%;
+    margin-top: 0px;
+    margin-bottom: 15px;
+  }
+
+  .menu-links {
+    justify-content: center;
+  }
+
+  .menu-links li {
+    padding: 0 15px;
+  }
+
+  .menu .navbar .btn {
+    flex-basis: 20%;
+    justify-content: center;
+    margin-top: 8px;
+  }
+  .banner {
+    padding-top: 200px;
+  }
+  .banner .content-wrapper {
+    flex-direction: column;
+  }
+  .content-wrapper .left-content h2,
+  .content-wrapper .left-content h2 span {
+    font-size: 25px;
+    text-align: center;
+  }
+  .content-wrapper .left-content h2,
+  .content-wrapper .left-content span,
+  .content-wrapper .left-content p {
+    width: 100%;
+    text-align: center;
+  }
+  .content-wrapper .left-content p {
+    font-size: 14px;
+    line-height: 20px;
+    width: 70%;
+    margin: 0 auto;
+  }
+  .content-wrapper .left-content span {
+    width: 90%;
+    margin: 0 auto;
+  }
+  .content-wrapper .left-content .btn {
+    text-align: center;
+    margin-top: 25px;
+  }
+  .content-wrapper .content-right-image img {
+    width: 90%;
+    margin-top: 20px;
+  }
+  .features {
+    width: 100% !important;
+  }
+  .feature-wrapper .content {
+    width: 100%;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+
+  .testimonial-content {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .testimonial-content img {
+    margin-right: 0;
+    margin-bottom: 15px;
+  }
+  .courses {
+    flex-direction: column;
+  }
+  .courses .course-card {
+    margin-bottom: 10px;
+    /* text-align: center; */
+  }
+  .course-card img {
+    width: 100%;
+  }
+  .course-card .card-footer .left img,
+  .right img {
+    width: 20px;
+    height: auto;
+  }
+  .course-card .card-footer .left span,
+  .right span {
+    font-size: 12px;
+    line-height: 20px;
+    color: var(--second-text-color);
+  }
+  .testimonial-content p {
+    width: 100%;
+    margin-left: 0;
+  }
+  .footer .content {
+    display: flex;
+    flex-direction: column;
+  }
+  .footer .content .vision {
+    width: 100%;
+    margin-bottom: 20px;
+    text-align: center;
+    margin-left: auto;
+    padding: 0 25px;
+  }
+  .footer .vision p {
+    width: 70%;
+    margin: 0 auto;
+  }
+  .footer-menu {
+    width: 100%;
+    margin-bottom: 15px;
+  }
+  .footer-menu h2 {
+    text-align: center !important;
+  }
+  .footer-menu li {
+    text-align: center !important;
+  }
+  .menu-list li::after {
+    width: 0;
+  }
+  body {
+    overflow-x: hidden !important;
+  }
+  .scrollTop {
+    display: none !important;
+  }
+}
