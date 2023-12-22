@@ -45,104 +45,42 @@
 
 /* Mobile Responsive CSS */
 
-@media only screen and (max-width: 767px) {
-  .menu {
-    width: 100% !important;
-  }
-  .container {
-    width: 100%;
-    padding: 0 15px;
-  }
-  .navbar {
-    display: flex;
-    flex-direction: column;
-  }
-
-  .menu .navbar .logo img {
-    width: 150px;
-  }
-
-  .menu .navbar .navlink {
-    flex-basis: 60%;
-    margin-top: 0px;
-    margin-bottom: 15px;
-  }
-
-  .menu-links {
-    justify-content: center;
-  }
-
-  .menu-links li {
-    padding: 0 15px;
-  }
-
-  .menu .navbar .btn {
-    flex-basis: 20%;
-    justify-content: center;
-    margin-top: 8px;
-  }
-  .banner {
-    padding-top: 200px;
-  }
-  .banner .content-wrapper {
-    flex-direction: column;
+@media only screen and (max-width: 480px) {
+  /* banner section responsive css */
+  .content-wrapper {
+    flex-direction: row-reverse;
+    /* text-align: center; */
   }
   .content-wrapper .left-content h2,
   .content-wrapper .left-content h2 span {
-    font-size: 25px;
-    text-align: center;
-  }
-  .content-wrapper .left-content h2,
-  .content-wrapper .left-content span,
-  .content-wrapper .left-content p {
-    width: 100%;
-    text-align: center;
+    font-size: 28px;
+    line-height: 35px;
   }
   .content-wrapper .left-content p {
     font-size: 14px;
+    line-height: 24px;
+  }
+  .section-heading h2 {
+    padding: 15px 0;
+    font-size: 25px;
+  }
+  .course-card {
+    text-align: center;
+  }
+  .course-card h2 {
+    font-size: 18px;
+    line-height: 28px;
+  }
+  .course-card h4 {
+    font-size: 14px;
     line-height: 20px;
-    width: 70%;
-    margin: 0 auto;
+    margin: 8px 0;
   }
-  .content-wrapper .left-content span {
-    width: 90%;
-    margin: 0 auto;
+  .course-btn {
+    padding: 8px 15px;
   }
-  .content-wrapper .left-content .btn {
-    text-align: center;
-    margin-top: 25px;
-  }
-  .content-wrapper .content-right-image img {
-    width: 90%;
-    margin-top: 20px;
-  }
-  .features {
-    width: 100% !important;
-  }
-  .feature-wrapper .content {
-    width: 100%;
-    margin-bottom: 20px;
-    text-align: center;
-  }
-
-  .testimonial-content {
-    flex-direction: column;
-    text-align: center;
-  }
-
-  .testimonial-content img {
-    margin-right: 0;
-    margin-bottom: 15px;
-  }
-  .courses {
-    flex-direction: column;
-  }
-  .courses .course-card {
-    margin-bottom: 10px;
-    /* text-align: center; */
-  }
-  .course-card img {
-    width: 100%;
+  .default-btn {
+    font-size: 14px;
   }
   .course-card .card-footer .left img,
   .right img {
@@ -153,44 +91,29 @@
   .right span {
     font-size: 12px;
     line-height: 20px;
-    color: var(--second-text-color);
   }
+  .testimonial-content {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .testimonial-content img {
+    margin-right: 0;
+    margin-bottom: 15px;
+  }
+
   .testimonial-content p {
     width: 100%;
     margin-left: 0;
   }
-  .footer .content {
-    display: flex;
-    flex-direction: column;
+  .menu-list li {
+    margin: 0;
+    padding: 0;
   }
-  .footer .content .vision {
-    width: 100%;
-    margin-bottom: 20px;
-    text-align: center;
-    margin-left: auto;
-    padding: 0 25px;
-  }
-  .footer .vision p {
-    width: 70%;
-    margin: 0 auto;
-  }
-  .footer-menu {
-    width: 100%;
-    margin-bottom: 15px;
-  }
-  .footer-menu h2 {
-    text-align: center !important;
-  }
-  .footer-menu li {
-    text-align: center !important;
-  }
-  .menu-list li::after {
-    width: 0;
-  }
-  body {
-    overflow-x: hidden !important;
+  .menu-list li a {
+    font-size: 13px;
   }
   .scrollTop {
-    display: none !important;
+    display: block;
   }
 }
